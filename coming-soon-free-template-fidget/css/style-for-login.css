@@ -1,0 +1,167 @@
+body{
+    background-color :transparent;
+    background-repeat:no-repeat ;
+    background-image :linear-gradient(35deg, whitesmoke 70%, #F25C54 -9%);
+
+}
+/* Copy of Untitled (3) 1 */
+#laptop {
+    position: absolute;
+    width: 374px;
+    height: 401px;
+    left: 240px;
+    top: 180px;
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25));
+}
+
+    /* Copy of Untitled (4) 1 */
+#phone{
+    position: absolute;
+    width: 528px;
+    height: 487px;
+    left: 86px;
+    top: 94px;
+    /*background: url(Copy of Untitled (4).png);*/
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25));
+}
+
+
+
+#forgot-pass{
+    color: #F25C54;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+}
+#box1-login{
+
+    top: 32px;
+    border-radius: 19px;
+    float: right;
+    width: 360px;
+    height: 600px;
+    margin-top: 100px;
+    margin-right: 20px;
+    overflow: scroll;
+    background-color: rgba(255, 255, 255, .7);
+    border: #F25C54;
+    box-shadow: 1px 8px 28px 7px rgba(225,225,225,0.4);
+    -webkit-box-shadow: 1px 8px 28px 7px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 8px 28px 7px rgba(0,0,0,0.4);
+}
+
+#p1{
+    color: white;
+    background: #F25C54;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #F25C54;
+}
+
+#p2{
+    color: white;
+    background: #F25C54;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #F25C54;
+}
+
+#input1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input{
+    outline: #1e7ccd;
+    width: 300px;
+    background-color: transparent;
+    border-top:hidden ;
+    border-left: hidden;
+    border-right: hidden;
+}
+#button1{
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    background: #F25C54;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    height: 45px;
+    border: #F25C54;
+}
+@media only screen and (max-width: 1150px) {
+  #phone{
+      left: 100px;
+  }
+    #laptop{
+        left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #phone{
+        left: 10px;
+    }
+    #laptop{
+        left: 20px;
+    }
+     #phone1{
+        display: none;
+    }
+    #laptop1{
+        display: none
+    }
+
+    #box1-login{
+
+        padding: 10px;
+        margin-right: 200px;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+    #box1-login{
+        margin-right:70px;
+    }
+    #phone{
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #box1-login{
+        margin-right:0.5px;
+        width: 100%;
+        float: right;
+    }
+    #phone{
+        display: none;
+    }
+    #laptop{
+        display: none;
+    }
+}
