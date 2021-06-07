@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+<head>
+   <script src=" https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.8/js/fileinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.8/js/plugins/sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.8/themes/fas/theme.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.8/css/fileinput.min.css">
+    <link href="https://releases.transloadit.com/uppy/v1.22.0/uppy.min.css" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>PeachHox Edit Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+
+            @media screen and (max-width: 600px){
+                .img-fluid{
+                    display: none;
+
+            }
+        }
+
+            @media screen and (max-width: 600px){
+                .fuckk{
+                    text-align: center;
+                }
+            }
+            .slidecontainer {
+                width: 85%;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+                align-content: center;
+            }
+
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 8px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+            }
+
+            .slider:hover {
+                opacity: 1;
+            }
+
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 25px;
+                border-radius: 30px;
+                background: #F25C54;
+                cursor: pointer;
+            }
+
+            .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: #04AA6D;
+                cursor: pointer;
+            }
+            @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+            button:focus,
+            input:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            a,
+            a:hover{
+                text-decoration: none;
+            }
+
+
+            @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+            button:focus,
+            input:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            a,
+            a:hover{
+                text-decoration: none;
+            }
+
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .withdrawal-sec{
+                border: 2px solid #F25C54;
+                width: 100px;
+                overflow: visible;
+                height: 30px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+            .card-body{
+                display: inline-flex;
+            }
+
+            .icon-bar {
+                width: 100%;
+                background-color: #555;
+                overflow: auto;
+                position: fixed;
+                bottom: 0;
+            }
+
+            .icon-bar a {
+                float: left;
+                width: 20%;
+                text-align: center;
+                padding: 8px 0;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 20px;
+            }
+
+            .icon-bar a:hover {
+                background-color: #000;
+            }
+
+            .active {
+                background-color: transparent;
+            }
+
+    </style>
+
+</head>
+
+<body>
+<hr>
+<div class="container bootstrap snippet">
+    <div class="row">
+        <div class="col-sm-10 fuckk" style="margin-top: 50px;" ><h1>Anurag Tripathi</h1></div>
+        <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive img-fluid" src="coming-soon-free-template-fidget/images/peachhoclogo-removebg-preview.png"></a></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"><!--left col-->
+
+
+            <div class="text-center">
+                <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                <h6>Upload a different photo...</h6>
+
+                <div style="display: inline-flex;text-align: left;padding-bottom: 10px">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Update profile</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                        <label class="custom-file-label" for="inputGroupFile01"><i class="fas fa-plus"></i> Choose</label>
+                    </div>
+                </div>
+
+            </div></hr><br>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Your Link (peachHox)<i class="fa fa-link fa-1x"></i></div>
+                <div class="panel-body"><a href="http://bootnipets.com">Peachhox.com/username</a></div>
+            </div>
+
+
+            <ul class="list-group">
+                <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i></li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong>Shares</strong></span> 125</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span> 13</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span> 37</li>
+                <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>
+            </ul>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Social Media</div>
+                <div class="panel-body">
+                    <i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
+                </div>
+            </div>
+
+        </div><!--/col-3-->
+        <div class="col-sm-9">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Profile</a></li>
+                <li><a data-toggle="tab" href="#bankaccount">Bank Account</a></li>
+                <li><a data-toggle="tab" href="#carddetails">Subscription Settings</a></li>
+                <li><a data-toggle="tab" href="#notification">Bundle Post</a></li>
+                <li><a data-toggle="tab" href="#display">Withdrawal</a></li>
+<!--                <li><a data-toggle="tab" href="#whatsnew">Whats new</a></li>-->
+            </ul>
+
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">
+                    <hr>
+                    <form class="form" action="##" method="post" id="registrationForm">
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="first_name"><h4>First name</h4></label>
+                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="last_name"><h4>Last name</h4></label>
+                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="phone"><h4>Phone</h4></label>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <label for="uname"><h4>Username</h4></label>
+                                <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Change username" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email"><h4>Email</h4></label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email"><h4>Location</h4></label>
+                                <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email"><h4>Date of Birthday</h4></label>
+                                <input type="date" class="form-control" id="Bday" placeholder="somewhere" title="enter birth day">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password"><h4>Password</h4></label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password2"><h4>Bio</h4></label>
+                                <input type="password" class="form-control" name="password2" id="password2" placeholder="Enter your Bio here " title="enter your password2.">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password"><h4>Gender</h4></label> &nbsp;&nbsp;
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+
+
+<!--                        <div class="form-group">-->
+
+<!--                            <div class="col-xs-6">-->
+<!--                                <label for="acctype"><h4>Subscription Type</h4></label>-->
+<!--                                <button type="button" class="btn btn-secondary btn-sm">FREE </button>-->
+<!--                                <button style="background-color: #F25C54;color: white" type="button" class="btn  btn-sm" data-toggle="modal" data-target="#exampleModalCenter">PAID </button>-->
+<!--                            </div>-->
+<!--                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
+<!--                                <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--                                    <div class="modal-content">-->
+<!--                                        <div class="modal-header">-->
+<!--                                            <h5 class="modal-title" id="exampleModalLongTitle">Select amount to charge </h5>-->
+<!--                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                                                <span aria-hidden="true">&times;</span>-->
+<!--                                            </button>-->
+<!--                                        </div>-->
+<!--                                        <div class="modal-body">-->
+<!--                                            <div class="slidecontainer">-->
+<!--                                                <input style="border-radius: 30px;color: #F25C54" type="range" min="1" max="150" value="50" class="slider" id="myRange">-->
+<!--                                            </div>-->
+<!--                                            <span style="float: left;margin-left: 30px">&nbsp;<i class="fas farx fa-rupee-sign" style="font-weight: bolder"> </i> 1</span>-->
+<!--                                            <span style="float: right;margin-right: 30px"> <i class="fas farx fa-rupee-sign" style="font-weight: bolder"> </i> 200 &nbsp;</span>-->
+<!--                                            <br>-->
+<!--                                            <p id="value1" style="width: 75%;height: 40px;border-radius: 30px;border-color: transparent;outline: none;text-align: center;margin-right: auto;margin-left: auto;align-content: center"  type="text" placeholder="Enter Amount">-->
+<!--                                                <i class="fas farx fa-rupee-sign" style="font-size: 20px;font-weight: bolder;text-align: center;margin-top: 3.2%"></i>-->
+<!--                                                <span id="demo" style="font-weight: bolder;font-size: 20px;color: #F25C54"> </span>-->
+
+<!--                                            </p>-->
+<!--                                        </div>-->
+<!--                                        <div class="modal-footer">-->
+<!--                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                                            <button type="button" class="btn" style="background-color: #F25C54;color: white">Upload </button>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+<!--                        <div class="form-group">-->
+
+<!--                            <div class="col-xs-6">-->
+<!--                                <label for="password2"><h4>Verify</h4></label>-->
+<!--                                <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <br>
+                                <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <hr>
+
+                </div><!--/tab-pane-->
+                <div class="tab-pane" id="bankaccount">
+
+                    <h2></h2>
+
+                    <hr>
+                    <form class="form" action="##" method="post" >
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="first_name"><h4>Bank Name</h4></label>
+                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="first_name"><h4>Account holder's Name</h4></label>
+                                <input type="text" class="form-control" name="" id="first_name" placeholder="Name" title="enter your account name if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="last_name"><h4>Account number</h4></label>
+                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Enter acc. number" title="enter your last name if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="phone"><h4>IFSC code</h4></label>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="enter IFSC code" title="enter your phone number if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <label for="mobile"><h4>Mobile</h4></label>
+                                <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <br>
+                                <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+                </div><!--/tab-pane-->
+                <div class="tab-pane" id="carddetails">
+
+
+                    <hr>
+                    <form class="form" action="##" method="post" >
+                                                <div class="form-group">
+
+                                                    <div class="col-xs-6">
+                                                        <label for="acctype"><h4>Subscription Type</h4></label>
+                                                        <button type="button" class="btn btn-secondary btn-sm">FREE </button>
+                                                        <button style="background-color: #F25C54;color: white" type="button" class="btn  btn-sm" data-toggle="modal" data-target="#exampleModalCenter">PAID </button>
+                                                    </div>
+                                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLongTitle">Select amount to charge </h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="slidecontainer">
+                                                                        <input style="border-radius: 30px;color: #F25C54" type="range" min="1" max="200" value="50" class="slider" id="myRange">
+                                                                    </div>
+                                                                    <span style="float: left;margin-left: 30px">&nbsp;<i class="fas farx fa-rupee-sign" style="font-weight: bolder"> </i> 1</span>
+                                                                    <span style="float: right;margin-right: 30px"> <i class="fas farx fa-rupee-sign" style="font-weight: bolder"> </i> 200 &nbsp;</span>
+                                                                    <br>
+                                                                    <p id="value1" style="width: 75%;height: 40px;border-radius: 30px;border-color: transparent;outline: none;text-align: center;margin-right: auto;margin-left: auto;align-content: center"  type="text" placeholder="Enter Amount">
+                                                                        <span style="font-size: 20px">For 1 month </span> <i class="fas farx fa-rupee-sign" style="font-size: 20px;font-weight: bolder;text-align: center;margin-top: 3.2%"></i>
+                                                                        <span id="demo" style="font-weight: bolder;font-size: 20px;color: #F25C54"> </span>
+
+
+
+                                                                    </span>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn" style="background-color: #F25C54;color: white">Save </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+
+
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <br>
+                                <button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div class="tab-pane" id="notification">
+                    <hr>
+                    <h3 style="text-align: center">Coming Soon</h3>
+
+<!--                    <div id="drag-drop-area"></div>-->
+
+<!--                    <script src="https://releases.transloadit.com/uppy/v1.22.0/uppy.min.js"></script>-->
+<!--                    <script>-->
+<!--                        var uppy = Uppy.Core()-->
+<!--                            .use(Uppy.Dashboard, {-->
+<!--                                inline: true,-->
+<!--                                target: '#drag-drop-area'-->
+<!--                            })-->
+<!--                            .use(Uppy.Tus, {endpoint: 'https://master.tus.io/files/'})-->
+
+<!--                        uppy.on('complete', (result) => {-->
+<!--                            console.log('Upload complete! We’ve uploaded these files:', result.successful)-->
+<!--                        })-->
+<!--                    </script>-->
+
+
+
+                    <hr>
+
+                </div><!--/tab-pane-->
+                <div class="tab-pane " id="display">
+                    <form class="form" action="##" method="post" >
+                        <h2>Withdrawal</h2>
+
+                        <div class="card" >
+                            <div class="card-body bodyx"style="margin-left: auto;margin-right: auto"  >
+                                <h4 style="display: inline-flex;text-align: center;margin-left: 10px">Income from paid post : &nbsp; <i class=" fas fa-rupee-sign"></i><p class="withdrawal-sec">1234</p></h4>
+                            </div>
+                        </div>
+                        <div class="card" style="margin-left: auto;margin-right: auto" >
+                            <div class="card-body bodyx" style="margin-left: auto;margin-right: auto" >
+                                <h4 style="display: inline-flex;text-align: center">Income from subscription: &nbsp; <i class=" fas fa-rupee-sign"></i><p class="withdrawal-sec">1234</p></h4>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body bodyx "style="margin-left: auto;margin-right: auto;" >
+                                <h4 style="display: inline-flex;text-align: center;margin-left: 100px">Total income  : &nbsp; <i  class=" fas fa-rupee-sign"></i><p class="withdrawal-sec" >1234</p></h4>
+                            </div>
+                        </div>
+                        <br>
+                        <button style="float: right" type="button" class="btn btn-success">Withdraw</button>
+
+<br>
+
+                    </form>
+
+                    <hr>
+
+                </div><!--/tab-pane-->
+                <div class="tab-pane " id="whatsnew">
+                    <hr>
+                    <form class="form" action="##" method="post" >
+                        <h2>Coming Soon Stay Tuned</h2>
+                    </form>
+                    <hr>
+
+                </div><!--/tab-pane-->
+
+
+            </div><!--/tab-pane-->
+        </div><!--/tab-content-->
+
+    </div><!--/col-9-->
+</div><!--/row-->
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
+
+
+<footer>
+
+    <div class="icon-bar navbarx">
+        <a class="active" href="#"><i class="fas qw fa-home"></i></a>
+        <a href="#"><i class="fas fa-comment-alt"></i></a>
+        <a href="#"><i class="fas fa-plus-square"></i></a>
+        <a href="#"><i class=" fas fa-bell"></i></a>
+        <a href="#"><i class=" fas fa-user-circle"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
